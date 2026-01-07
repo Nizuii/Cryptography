@@ -39,3 +39,11 @@ Cryptography is not just about hiding data. It solves 4 major problems.
 1. **Integrity**
 
    ➡️ Data is not altered secretly.
+
+1. **Authentication**
+
+   ➡️ Proves who sent the data
+
+1. Non-repudiation
+
+   ➡️ Sender cannot deny sending it
