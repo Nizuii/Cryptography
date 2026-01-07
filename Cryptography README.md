@@ -21,3 +21,21 @@ Cryptography always involves 3 things:
 ```bash
 Plaintext ➡️ Encryption ➡️ Ciphertext ➡️ Decryption ➡️ Plaintext
 ```
+## What is a "Key" ?
+
+A key is like the password to the lock.
+
+- Without the key ➡️ Data looks like garbage.
+- With key ➡️ data becomes meaningful.
+
+## Why Cryptography Exists
+
+Cryptography is not just about hiding data. It solves 4 major problems.
+
+1. **Confidentiality**
+
+   ➡️ Only authorized people can read the data.
+
+1. **Integrity**
+
+   ➡️ Data is not altered secretly.
