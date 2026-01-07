@@ -47,3 +47,12 @@ Cryptography is not just about hiding data. It solves 4 major problems.
 1. Non-repudiation
 
    ➡️ Sender cannot deny sending it
+
+## Where Cryptography is used
+
+- HTTPS websites
+- Wi-Fi passwords
+- Whatsapp / Signal messages
+- Password storage
+- Digital Signatures
+- Blockchain & Crypto
