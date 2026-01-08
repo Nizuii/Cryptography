@@ -60,4 +60,24 @@ Symmetric encryption uses one shared key for both encryption and decryption, whi
       <b>Asymetric Encryption (key pair)</b>
     </td>
   </tr>
+  <tr>
+    <td>Common algorithms</td>
+    <td>AES, 3DES, ChaCha20</td>
+    <td>RSA, ECC, EIGamal</td>
+  </tr>
+  <tr>
+    <td>Main usage</td>
+    <td>Bulk data encryption (files, databases, VPN, Wi-Fi)</td>
+    <td>Key exchange (TLS), digital signatures, certificates, email encryption.</td>
+  </tr>
+  <tr>
+    <td>Key sharing</td>
+    <td>Secret key must be shared securely</td>
+    <td>Public key shared openly; private key kept secret.</td>
+  </tr>
+  <tr>
+    <td>Performance</td>
+    <td>High performance, low overhead</td>
+    <td>Lower performance, higher overhead</td>
+  </tr>
 </table>
