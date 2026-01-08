@@ -30,3 +30,32 @@
 ## Symmetric VS Asymmetric
 
 Symmetric encryption uses one shared key for both encryption and decryption, while asymmetric encryption uses a key pair: One public key and one private key. Symmetric is faster and better for bulk data; asymmetric is slower but solves secure key exchange and enables digital signatures.
+
+### Core concept difference
+
+- Symmetric: Same secret key is used by both parties to encrypt and decrypt.
+- Asymmetric: One key (public) encrypts and the mathematically related other key (private) decrypts; the private key is never shared.
+
+### Speed and resource usage
+
+- Symmetric: Much faster and needs fewer CPU/resources; ideal for large data (disk encryption,VPN tunnels, bulk HTTPS traffic).
+- Asymmetric: Slower and more CPU-intensive; used mainly for small pieces of data like keys, authentication, and signatures.
+
+### Key management
+
+- Symmetric: Main problem is securely sharing the secret key with all legitimate parties; key distribution becomes hard in large networks.
+- Asymmetric: Pulic key can be shared openly, only the private key must be protected, which simplifies distribution and scaling.
+
+### Typical algorithms and uses
+
+<table>
+  <tr>
+    <td>
+      **Feature**
+    </td>
+    <td>
+      **Symmetric Encryption (one key)**
+    </td>
+    <td>**Asymetric Encryption (key pair)**</td>
+  </tr>
+</table>
