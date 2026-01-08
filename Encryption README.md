@@ -51,11 +51,13 @@ Symmetric encryption uses one shared key for both encryption and decryption, whi
 <table>
   <tr>
     <td>
-      **Feature**
+      <b>Feature</b>
     </td>
     <td>
-      **Symmetric Encryption (one key)**
+      <b>Symmetric Encryption (one key)</b>
     </td>
-    <td>**Asymetric Encryption (key pair)**</td>
+    <td>
+      <b>Asymetric Encryption (key pair)</b>
+    </td>
   </tr>
 </table>
