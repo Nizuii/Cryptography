@@ -15,3 +15,10 @@
   2. **Integrity**: Ensures the message isn't altered along the way.
   3. **Authentication**: Confirms the identity of sender and reciever.
   4. **Non-repudiation**: Prevents someone from denying they sent a message.
+
+## Difference between Encryption, Encoding & Hashing
+
+**Encryption**: Encryption is like locking a letter in a box and sending it. Only the person with the correct key can open it.
+- Encryption is necessary in messaging application like whatsapp, banking websites, etc...
+- Encrption is reversible and needs the key to reverse it.
+- Used in: HTTPS websites, Messaging apps, VPN's, Disk encryption.
