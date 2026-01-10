@@ -7,3 +7,13 @@
 - AES replaced DES and is standardized by NIST.
 - AES uses a fixed block size of 128 bits.
 - It has a variant of 3 key sizes: 128, 192, 256 bits.
+
+# AES High Level Flow
+
+**AES doesnot encrypt the whole file at once.**
+It works like:
+
+1. Split data into 128-bit blocks.
+1. Each block goes through multiple rounds.
+2. Each round scrambles data using the same secret key.
+3. Output ➡️ encrypted ciphertext.
