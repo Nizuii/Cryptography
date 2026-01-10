@@ -12,7 +12,7 @@
 
 <img src="/images/aes.png">
 
-**AES doesnot encrypt the whole file at once.**
+**AES does not encrypt the whole file at once.**
 It works like:
 
 1. Split data into 128-bit blocks.
@@ -44,3 +44,7 @@ It works like:
     <td>14 rounds</td>
   </tr>
 </table>
+
+## What happens inside one AES round
+
+### 1️⃣ SubBytes - Confusion
