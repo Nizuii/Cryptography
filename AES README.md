@@ -10,6 +10,8 @@
 
 # AES High Level Flow
 
+<img src="/images/aes.png">
+
 **AES doesnot encrypt the whole file at once.**
 It works like:
 
