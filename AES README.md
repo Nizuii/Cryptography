@@ -48,3 +48,17 @@ It works like:
 ## What happens inside one AES round
 
 ### 1️⃣ SubBytes - Confusion
+
+- Each byte replaced using a lookup table.
+- Makes pattern disappear.
+- Protects against statistical attacks.
+
+### 2️⃣ ShiftRows – Diffusion
+
+- Rows of the blocks are shifted left.
+- Spreads byte influence across columns
+
+### 3️⃣ MixColumns – Avalanche Effect
+
+- Columns mixed using matrix math.
+- One bit change → many bits change
