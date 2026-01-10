@@ -1,58 +1,17 @@
 # What is Cryptography
 
-- Cryptography is the scrience and practice of protectiong information by coverting it into a form that unauthorized people cannot understand, while allowing the intended recieveer to read it. In simple words:
+- Cryptography is the science of securing information so only the intented people can read it.
+- Example: I am writing a letter and sealing it. Only the right person has the key to open it.
+- Without cryptography, sending data online be like shouting and revealing all our secrets in a crowded room.
+- Cryptography plays a huge role in everyday life ex:
 
-> Cryptography is how we lock data with math.
+  - **Online banking**: Keeps credit cards and transaction data safe.
+  - **Messaing apps**: Whatsapp, Signal and Telegram use strong end to end encryption so that unauthorized persons can't access or see the messages.
+  - **Passwords**: Stores passwords securely in databases so that attackers can't read them.
+ 
+- Core principles of cryptography.
 
-## 🧩 Core Idea
-
-Cryptography always involves 3 things:
-
-1. **Plaintext** - The original readable message
-
-   > Example: My name is Cristiano Ronaldo.
-
-1. **ENCRYPTION** - Cnverting plain tex into unreadable form
-
-   > Example: X9$@!kL#
-
-1. **Decryption** - Converting it back to readable form (Usibg a key)
-
-```bash
-Plaintext ➡️ Encryption ➡️ Ciphertext ➡️ Decryption ➡️ Plaintext
-```
-## What is a "Key" ?
-
-A key is like the password to the lock.
-
-- Without the key ➡️ Data looks like garbage.
-- With key ➡️ data becomes meaningful.
-
-## Why Cryptography Exists
-
-Cryptography is not just about hiding data. It solves 4 major problems.
-
-1. **Confidentiality**
-
-   ➡️ Only authorized people can read the data.
-
-1. **Integrity**
-
-   ➡️ Data is not altered secretly.
-
-1. **Authentication**
-
-   ➡️ Proves who sent the data
-
-1. Non-repudiation
-
-   ➡️ Sender cannot deny sending it
-
-## Where Cryptography is used
-
-- HTTPS websites
-- Wi-Fi passwords
-- Whatsapp / Signal messages
-- Password storage
-- Digital Signatures
-- Blockchain & Crypto
+  1. **Confidentiality**: Only the intended person can read the message.
+  2. **Integrity**: Ensures the message isn't altered along the way.
+  3. **Authentication**: Confirms the identity of sender and reciever.
+  4. **Non-repudiation**: Prevents someone from denying they sent a message.
