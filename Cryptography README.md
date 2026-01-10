@@ -28,3 +28,9 @@
   - Encoding is also reversible. Encoding does not provide any security because unline encryption it does not have any keys to secure the data.
   - It is mainly used for compatibility.
   - Its mainly used in emails (attachments), images & videos, URL's etc...
+
+**Hashing**: Hashing is like putting food into a grinder. We get the powder and also we cannot reconstruct the original food.
+- Basically hashing is ireversible. Once we hashed a data it cannot be reversed.
+- Websites dont store the password in plain text. They store the hash. So when we login in again the password again will be hashed and compared.
+- A single change in a text can affect the entire data and results in a different hash.
+- It is mainly used for verification and are used in password storage, file integrity checks, digital signatures and block chain.
