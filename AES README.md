@@ -19,3 +19,28 @@ It works like:
 1. Each block goes through multiple rounds.
 2. Each round scrambles data using the same secret key.
 3. Output ➡️ encrypted ciphertext.
+
+## AES Rounds
+
+<table>
+  <tr>
+    <td><strong>AES Varient</strong></td>
+    <td><strong>Key Size</strong></td>
+    <td><strong>Rounds</strong></td>
+  </tr>
+  <tr>
+    <td>AES-128</td>
+    <td>128 bits</td>
+    <td>10 rounds</td>
+  </tr>
+  <tr>
+    <td>AES-192</td>
+    <td>192 bits</td>
+    <td>12 rounds</td>
+  </tr>
+  <tr>
+    <td>AES-256</td>
+    <td>256 bits</td>
+    <td>14 rounds</td>
+  </tr>
+</table>
