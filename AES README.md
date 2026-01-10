@@ -8,7 +8,7 @@
 - AES uses a fixed block size of 128 bits.
 - It has a variant of 3 key sizes: 128, 192, 256 bits.
 
-# AES High Level Flow
+## AES High Level Flow
 
 <img src="/images/aes.png">
 
