@@ -32,3 +32,11 @@ Symmetric cryptography is an encryption system where the sender and the reciecve
 - The most popular symmetric key cryptography systems are Data Encryption Systems (DES) and Advanced Encryption Systems (AES).
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240409123909/Private-Key-Encryption-(1).png">
+
+### 2. Hash Functions
+
+Hash functions does not require a key, instead  they use mathematical algorithms to convert messages of any arbitrary length into a fixed-length output, known as a hash value or digest. Hash functions are designed to be one-way, meaning the original input cannot be derived from the output. Given Below, Some of the most widely used hash functions include:
+
+### 3. Asymmetric Cryptography
+
+In Asymmetric Key Cryptography a pair of keys is used to encrypt and decrypt information. A sender's public key is used for encryption and a receiver's private key is used for decryption. Public keys and Private keys are different. Even if the public key is known by everyone the intended receiver can only decode it because he holds his private key. The most popular asymmetric key cryptography algorithm is the RSA algorithm.
