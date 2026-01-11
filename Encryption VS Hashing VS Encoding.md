@@ -25,3 +25,14 @@ Hashing converts data into fixed length ireversible cipher value called hash. It
 - Ensures Integrity (detects changes).
 - Fixed length regardless of the data size.
 - Algorithms include SHA-256, MD5.
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210115190611/NewProject-660x123.jpg">
+
+## What is Encoding?
+
+Encoding transforms data into a different format for safe transmission or storage. It is not a security mechanism and is fully reversible without a key.
+
+- Reversible without a key.
+- Ensures data compatibility and formatting.
+- Used for data transport, not security.
+- Examples include Base64, URL encoding, ASCII.
