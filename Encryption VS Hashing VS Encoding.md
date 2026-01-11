@@ -28,6 +28,12 @@ Hashing converts data into fixed length ireversible cipher value called hash. It
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210115190611/NewProject-660x123.jpg">
 
+**Example**:
+
+```bash
+echo "hello" > a.txt
+sha256sum a.txt
+```
 ## What is Encoding?
 
 Encoding transforms data into a different format for safe transmission or storage. It is not a security mechanism and is fully reversible without a key.
