@@ -21,3 +21,11 @@ Block ciphers encrypt data in blocks of set lengths, while stream ciphersdo not 
 1. **Electronic Codebook (ECB)**: In this mode plain text messages are divided into blocks where encryption is applied to each block seperately. The ECB cipher mode does not hide data pattern because it lacks diffusion and is not recommended for security frameworks.
 1. **Cipher Block Chaining Block**: This mode combhines cipher text from previous block with current plain text block using XOR operation before performing the encryption. An IV is applied to the first plaintext block in a CBC mode to ensure uniqueness.
 1. **Galois/Counter Mode (GCM)**: It is a modern encryption mode that provides both confidentiality and integrity at the same time. It encrypts data using counter mode with a unique nonce, and simultaneously generates an authentication tag to detect any tampering. Because it’s fast, secure, and hard to misuse, GCM is widely used in TLS/HTTPS and secure APIs.
+
+## What are Stream Ciphers?
+
+- A stream cipher encrypts data one bit or byte at a time, rather than in fixed-size blocks.
+- It generates a keystream from a secret key and a nonce/IV.
+- Encryption and decryption are done by XORing the keystream with the data.
+- The same operation is used for both encryption and decryption, making it fast and efficient.
+- Reusing the same key and nonce is dangerous, because it can expose the original data.
