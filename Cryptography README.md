@@ -35,7 +35,7 @@ Symmetric cryptography is an encryption system where the sender and the reciecve
 
 ### 2. Hash Functions
 
-Hash functions does not require a key, instead  they use mathematical algorithms to convert messages of any arbitrary length into a fixed-length output, known as a hash value or digest. Hash functions are designed to be one-way, meaning the original input cannot be derived from the output. Given Below, Some of the most widely used hash functions include:
+Hash functions does not require a key, instead  they use mathematical algorithms to convert messages of any arbitrary length into a fixed-length output, known as a hash value or digest. Hash functions are designed to be one-way, meaning the original input cannot be derived from the output.
 
 ### 3. Asymmetric Cryptography
 
