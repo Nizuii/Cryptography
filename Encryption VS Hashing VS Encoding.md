@@ -31,8 +31,9 @@ Hashing converts data into fixed length ireversible cipher value called hash. It
 **Example**:
 
 ```bash
-echo "hello" > a.txt
+echo "Hello" > a.txt
 sha256sum a.txt
+66a045b452102c59d840ec097d59d9467e13a3f34f6494e539ffd32c1bb35f18
 ```
 ## What is Encoding?
 
