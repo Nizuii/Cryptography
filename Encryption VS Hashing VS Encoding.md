@@ -36,3 +36,10 @@ Encoding transforms data into a different format for safe transmission or storag
 - Ensures data compatibility and formatting.
 - Used for data transport, not security.
 - Examples include Base64, URL encoding, ASCII.
+
+Example:
+
+Input:
+```bash
+echo "hello" | base64
+```
