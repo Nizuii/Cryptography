@@ -40,3 +40,5 @@ Hash functions does not require a key, instead  they use mathematical algorithms
 ### 3. Asymmetric Cryptography
 
 In Asymmetric Key Cryptography a pair of keys is used to encrypt and decrypt information. A sender's public key is used for encryption and a receiver's private key is used for decryption. Public keys and Private keys are different. Even if the public key is known by everyone the intended receiver can only decode it because he holds his private key. The most popular asymmetric key cryptography algorithm is the RSA algorithm.
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240409125853/Asymmetric-.webp">
