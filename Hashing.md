@@ -8,3 +8,8 @@ Hashing is the process of converting data of any size into a fixed size output u
 
 - Pre-image resistance means in a hash function means its computionally infeasible to find the original input when we aare given with only the fixed-size hash output.
 - This makes the function one way function; this is crucial for security, preventing attackers from reversing hashes to find data like passwords.
+
+### 2️⃣ Second Pre-image Resistance
+
+- A second pre-image resistance hash function makes it computionally infeasible to find a different input that produces the same hash output as a given specific input.
+- its hard to find x1 such that H(x) = H(X1) when x is known.
