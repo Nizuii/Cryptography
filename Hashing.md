@@ -37,3 +37,7 @@ MD5 & SHA-1 are broken primarily because they are vulnerable to collision attack
 - **What it is**: Both algorithms were designed to be computionally fast, which is good for data integrity checks but terrible for passwords.
 - **Why it matters**: Attackers can quickly generate millions of password hashes (using rainbow tables or bruteforce) and compare them to stolen hash list to find plain text passwords.\
 - **Solution**: Modern password hashing uses slow, memory-intensive algorithms (like bcrypt, scrypt, Argon2) that are deliberately hard to compute quickly, making brute-forcing infeasible. 
+
+## Why Hashes are used?
+
+- Hashes are used for efficient data retrieval, verifying data integrity, and securing sensitive information like passwords, as they convert data into unique, fixed-length codes that are hard to reverse, making them essential for databases, file verification and cryptography.
