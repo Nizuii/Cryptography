@@ -18,3 +18,15 @@ Hashing is the process of converting data of any size into a fixed size output u
 
 - A collision resistance hash function is a cryptographic function that makes it computionally infeasible to find 2 different inputs that produce the exact same fixed-length output.
 - Ensuring data integrity and security for things like digital signatures, where any alteration to the input would result in different hash revealing the change.
+
+## Why MD5 & SHA-1 are broken?
+
+MD5 & SHA-1 are broken primarily because they are vulnerable to collision attacks, meaning different inputs can produce the same hash output, undermining data integrity and digital signatures. And also because they are too fast, making them easy to crack for password hashing through bruteforce attacks.
+
+### Key reasons for their weakness:
+
+#### 1. Hash Collisions:
+
+- **What it is**: Finding two different files that generate the exact same MD% or SHA01 hash.
+- **Why it matters**: An attacker could create a malicious file that has the same hash as a legitimate file, tricking users or systems into accepting the bad file as authentic.
+- **MD5**: Practical collision attacks were demonstrated in the early 2000s, rendering it insecure for digital certificates and signatures.
