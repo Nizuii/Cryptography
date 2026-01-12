@@ -41,3 +41,9 @@ MD5 & SHA-1 are broken primarily because they are vulnerable to collision attack
 ## Why Hashes are used?
 
 - Hashes are used for efficient data retrieval, verifying data integrity, and securing sensitive information like passwords, as they convert data into unique, fixed-length codes that are hard to reverse, making them essential for databases, file verification and cryptography.
+
+### Key uses of hashing
+
+- **Password Security**: Instead of storing plain passwords, systems store their hashes. When we log in, our entered password is hashed and compared to the stored hash, ensuring our actual password is never exposed.
+- **Data Integrity**: Hashing creates a unique fingerprint for data. If even a single bit of data changes the hash changes completely, allowing easy detection of corruption or tampering in files, downloads and databases.
+- **Efficient Data Retrieval**: 
