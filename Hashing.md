@@ -21,7 +21,7 @@ Hashing is the process of converting data of any size into a fixed size output u
   H("password123") = 5e884898...
   ```
 
-  Anattacker steals database.
+  An attacker steals database.
 
   If pre-image resistance is strong:
 
@@ -30,7 +30,7 @@ Hashing is the process of converting data of any size into a fixed size output u
  
   If it's weak:
 
-  - Attacker computes the roiginal password directly.
+  - Attacker computes the original password directly.
  
 ### 2️⃣ Second Pre-image Resistance
 
@@ -41,3 +41,19 @@ Hashing is the process of converting data of any size into a fixed size output u
   ```
 
   with x1 ≠ x2.
+
+- **Why this matters**: Imagine a software update, Hash is publicly published. We download the fileand verify the hash. If the second pre-image resistance fails that means attacker takes legitimate file, creates malicious file with same hash and replaces download.
+
+### 3️⃣ Collision Resistance
+
+- It should be infeasible to find any two different input that produces the same hash.
+- Formally:
+
+  ```bash
+  Find x₁ ≠ x₂ such that:
+  H(x₁) = H(x₂)
+  ```
+
+- Collisions exists because: fixed size output and infinite possible inputs.
+- By math collisions are guaranteed to exist.
+- Security goal is that they must be impossible to find.
