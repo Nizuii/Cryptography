@@ -30,3 +30,10 @@ MD5 & SHA-1 are broken primarily because they are vulnerable to collision attack
 - **What it is**: Finding two different files that generate the exact same MD% or SHA01 hash.
 - **Why it matters**: An attacker could create a malicious file that has the same hash as a legitimate file, tricking users or systems into accepting the bad file as authentic.
 - **MD5**: Practical collision attacks were demonstrated in the early 2000s, rendering it insecure for digital certificates and signatures.
+- **SHA-1**: While harder to break, practical collision attacks were developed later (eg: theSHAttered attack in 2017), leading to its official depreication by NIST.
+
+#### 2. Speed (for Password Hashing):
+
+- **What it is**: Both algorithms were designed to be computionally fast, which is good for data integrity checks but terrible for passwords.
+- **Why it matters**: Attackers can quickly generate millions of password hashes (using rainbow tables or bruteforce) and compare them to stolen hash list to find plain text passwords.\
+- **Solution**: Modern password hashing uses slow, memory-intensive algorithms (like bcrypt, scrypt, Argon2) that are deliberately hard to compute quickly, making brute-forcing infeasible. 
