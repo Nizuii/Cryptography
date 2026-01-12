@@ -42,7 +42,7 @@ Hashing is the process of converting data of any size into a fixed size output u
 
   with x1 ≠ x2.
 
-- **Why this matters**: Imagine a software update, Hash is publicly published. We download the fileand verify the hash. If the second pre-image resistance fails that means attacker takes legitimate file, creates malicious file with same hash and replaces download.
+- **Why this matters**: Imagine a software update, Hash is publicly published. We download the file and verify the hash. If the second pre-image resistance fails that means attacker takes legitimate file, creates malicious file with same hash and replaces download.
 
 ### 3️⃣ Collision Resistance
 
