@@ -46,4 +46,5 @@ MD5 & SHA-1 are broken primarily because they are vulnerable to collision attack
 
 - **Password Security**: Instead of storing plain passwords, systems store their hashes. When we log in, our entered password is hashed and compared to the stored hash, ensuring our actual password is never exposed.
 - **Data Integrity**: Hashing creates a unique fingerprint for data. If even a single bit of data changes the hash changes completely, allowing easy detection of corruption or tampering in files, downloads and databases.
-- **Efficient Data Retrieval**: 
+- **Efficient Data Retrieval**:  Hash tables use hashing to map keys to specific locations, allowing for extremely fast data lookup, insertion and deletion in databases and data structures.
+- **File Verification**: Websites provide hashes for large downloads. Users can generate a hash of downloaded file and compare it to the provided one to confirm it's authentic and hasn't been altered.
