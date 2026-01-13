@@ -1,4 +1,4 @@
-<img width="1386" height="461" alt="image" src="https://github.com/user-attachments/assets/53886d26-9cc3-4aa9-a33e-be9fc24c1b98" /># Difference Between Block Cipher & Stream Cipher
+# Difference Between Block Cipher & Stream Cipher
 
 ## What is Confusion & Diffusion?
 
@@ -9,3 +9,4 @@
 ## What is Stream Cipher?
 
 - Each plaintext digit is encrypted one at a time with the corresponding digit of the keystream, to give a digit of the ciphertext stream.
+<img width="1386" height="461" alt="image" src="https://github.com/user-attachments/assets/53886d26-9cc3-4aa9-a33e-be9fc24c1b98" />
