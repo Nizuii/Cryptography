@@ -10,3 +10,8 @@
 
 - Each plaintext digit is encrypted one at a time with the corresponding digit of the keystream, to give a digit of the ciphertext stream.
 <img width="1386" height="461" alt="image" src="https://github.com/user-attachments/assets/53886d26-9cc3-4aa9-a33e-be9fc24c1b98" />
+
+## What is Block Cipher?
+
+- A block cipher is a deterministic algorithm operating on fixed length groups of bits called blocks.
+<img width="1363" height="453" alt="image" src="https://github.com/user-attachments/assets/cd4539eb-772a-4490-97bd-103881e6d8f0" />
