@@ -19,3 +19,17 @@ Encryption is the cryptographic method of converting a plain readable data into 
 - It is very slow compared to symmetric encryption.
 - It is not for bulk data.
 - It is slow because of heavy math.
+
+## Hybrid Encryption.
+
+- AES is fast but needs shared keys, RSA/ECC is secure but slow.
+- So inorder to solve this hybrid encryption is used.
+- Work flow:
+
+  1. Client generates random symmetric session key.
+  1. Client encrypts session key using servers public key.
+  1. Server decrypts it using private key.
+  1. Both sides now share the same AES key.
+  1. All data encrypted using AES.
+ 
+- Hybrid encryption uses asymmetric cryptgraphy to securely exchange a symmetric key, then use symmetric encryption for faster data transfer.
