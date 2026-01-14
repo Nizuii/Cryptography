@@ -137,3 +137,13 @@ After:
 [ k l i j ]
 [ p m n o ]
 ```
+
+### 3️⃣ MixColumns - Vertical Diffusion.
+
+- Each column is treated as a vector and multiplied by a fixed matrix in GF(2⁸).
+
+  Conceptually: NewColumn = Matrix x OldColumn
+
+### 4️⃣ AddRoundKey — The Lock
+
+The state is XORed with the round key: state = state ⊕ roundkey
