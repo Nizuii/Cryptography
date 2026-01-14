@@ -33,3 +33,5 @@ Encryption is the cryptographic method of converting a plain readable data into 
   1. All data encrypted using AES.
  
 - Hybrid encryption uses asymmetric cryptgraphy to securely exchange a symmetric key, then use symmetric encryption for faster data transfer.
+
+> TLS uses RSA or ECC on;y during the handshake to exchange a session key, and then uses AES to encrypt all appication data.
