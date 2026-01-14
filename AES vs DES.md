@@ -63,7 +63,7 @@ State ⊕ RoundKey = New State
 - XOR each byte with the corresponding key byte.
 - Without this AES is reversible by anyone.
 
-### 2️⃣ SubBytes - Confusion
+### 1️⃣ SubBytes - Confusion
 
 - Each byte in the state is replaced using a lookup table called S-Box.
 
@@ -93,3 +93,29 @@ State ⊕ RoundKey = New State
   [ 11 98 5d 52 ]
   [ ae f1 e5 30 ]
 
+### 2️⃣ ShiftRows - Horizontal Difussion
+
+- In horizontal difussion rach row of the state is rotated left.
+
+<table>
+  <tr>
+    <td><b>Row</b></td>
+    <td><b>Shift</b></td>
+  </tr>
+  <tr>
+    <td>Row 0</td>
+    <td>0 bytes</td>
+  </tr>
+  <tr>
+    <td>Row 1</td>
+    <td>1 byte</td>
+  </tr>
+  <tr>
+    <td>Row 2</td>
+    <td>2 bytes</td>
+  </tr>
+  <tr>
+    <td>Row 3</td>
+    <td>3 bytes</td>
+  </tr>
+</table>
