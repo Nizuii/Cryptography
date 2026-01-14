@@ -119,3 +119,21 @@ State ⊕ RoundKey = New State
     <td>3 bytes</td>
   </tr>
 </table>
+
+Before:
+
+```bash
+[ a b c d ]
+[ e f g h ]
+[ i j k l ]
+[ m n o p ]
+```
+
+After:
+
+```bash
+[ a b c d ]
+[ f g h e ]
+[ k l i j ]
+[ p m n o ]
+```
