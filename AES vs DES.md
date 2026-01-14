@@ -72,3 +72,24 @@ State ⊕ RoundKey = New State
 - An S-Box is just atable with 256 entries (0x00 ➡️ 0xFF). Each possbile byte value: 00, 01, 02, ..., FF maps to another byte.
 - Example: if input byte is 0x52 output byte os 0xED.
 - This mapping is fixed, public, same for every AES implementation and same in every round.
+- Here is what happens to state in SubBytes:
+
+  AES state - 4x4 bytes.
+
+  Before SubBytes:
+
+  ```bash
+  [ 19 a0 9a e9 ]
+  [ 3d f4 c6 f8 ]
+  [ e3 e2 8d 48 ]
+  [ be 2b 2a 08 ]
+  ```
+
+  After SubBytes:
+
+  ```bash
+  [ d4 e0 b8 1e ]
+  [ 27 bf b4 41 ]
+  [ 11 98 5d 52 ]
+  [ ae f1 e5 30 ]
+
