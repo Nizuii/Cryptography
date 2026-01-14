@@ -68,3 +68,7 @@ State ⊕ RoundKey = New State
 - Each byte in the state is replaced using a lookup table called S-Box.
 
   <img width="1063" height="341" alt="image" src="https://github.com/user-attachments/assets/eeb2c0ff-e2f9-455b-bb2c-c0cc5bb4d8fb" />
+
+- An S-Box is just atable with 256 entries (0x00 ➡️ 0xFF). Each possbile byte value: 00, 01, 02, ..., FF maps to another byte.
+- Example: if input byte is 0x52 output byte os 0xED.
+- This mapping is fixed, public, same for every AES implementation and same in every round.
