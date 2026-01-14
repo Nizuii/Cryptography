@@ -31,3 +31,23 @@ Both AES & DES are symmetric block cipher encryption. So lets differentiate how 
   [ 31 31 98 a2 ]
   [ e0 37 07 34 ]
   ```
+### High-Level AES Flow
+
+AES encryption has 3 phases:
+
+**Phase 1: Initial Round**
+
+AddRoundKey
+
+**Phase 2: Main Rounds (Repeated)**
+
+- SubBytes
+- ShiftRows
+- MixColumns
+- AddRoundKey
+
+**Phase 3: Final Round**
+
+- SubBytes
+- ShiftRows
+- AddRoundKey
