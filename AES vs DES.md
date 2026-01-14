@@ -1,4 +1,4 @@
-# Difference between AES & DES?
+# Working of AES
 
 Both AES & DES are symmetric block cipher encryption. So lets differentiate how AES and DES works and what is the difference betwwen both.
 
@@ -147,3 +147,26 @@ After:
 ### 4️⃣ AddRoundKey — The Lock
 
 The state is XORed with the round key: state = state ⊕ roundkey
+
+
+## Difference Between AES & DES
+
+### 1️⃣ Full Forms
+
+- AES stands for Advanced Encryption Standard.
+- DES stands for Data Encryption Standard.
+- Both are symmetric block ciphers.
+
+### 2️⃣ Key Size
+
+- DES use 56 bit key size.
+- Meanwhile AES uses 128 bits / 192 bits / 256 bits.
+- 56 bit DES can be bruteforced in hours with modern hardware.
+- AES-128 would take billions of years to crack.
+
+### 3️⃣ Block Size
+
+- DES block size is 64 bits.
+- AES block size is 128 bits.
+- Smaller block size leads to pattern leakage risk.
+- AES encrypts more data per block resulting in stronger diffusion.
