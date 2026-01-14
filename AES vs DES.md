@@ -51,3 +51,20 @@ AddRoundKey
 - SubBytes
 - ShiftRows
 - AddRoundKey
+
+### 1️⃣ AddRoundKey (XOR With Key)
+
+This is the only step that uses the key directly.
+
+```bash
+State ⊕ RoundKey = New State
+```
+
+- XOR each byte with the corresponding key byte.
+- Without this AES is reversible by anyone.
+
+### 2️⃣ SubBytes - Confusion
+
+- Each byte in the state is replaced using a lookup table called S-Box.
+
+  <img width="1063" height="341" alt="image" src="https://github.com/user-attachments/assets/eeb2c0ff-e2f9-455b-bb2c-c0cc5bb4d8fb" />
