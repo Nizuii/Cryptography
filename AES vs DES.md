@@ -10,7 +10,7 @@ Both AES & DES are symmetric block cipher encryption. So lets differentiate how 
   - AES encryption cipher type is symmetric block cipher.
   - Its block size is 128 bits meaning it will divide the data into 128 bit blocks.
   - Key sizes supported by AES are: 128 bits, 192 bits, 256 bits.
-  - Depending upon the key size the rounds ofencryption is determined.
+  - Depending upon the key size the rounds of encryption is determined.
   - Its structure is substitution-permutation network (SPN)
 
 ### AES State - Heart of AES
