@@ -11,3 +11,16 @@ A digital signature is a cryptographic mechanism that proves three things at onc
 ## How a digital algorithm works?
 
 <img width="617" height="380" alt="image" src="https://github.com/user-attachments/assets/fcd652b0-f855-46a7-801a-5e2ed7cad2dc" />
+
+### 1️⃣ Sender side (Signing)
+
+1. The sender writes a message
+
+```bash
+"Pay Nizam $500,000"
+```
+
+2. The message is hashed
+
+```bash
+Hash("Pay Nizam $500,000") 
