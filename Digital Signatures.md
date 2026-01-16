@@ -62,7 +62,7 @@ The server already has:
   - Contains servers public key
   - Digitally signed by a CA
 
-Phase 1: User types https://www.example.com
+### Phase 1: User types https://www.example.com
 
 This phase uses asymmetric cryptography + digital signatures.
 
@@ -78,9 +78,50 @@ The browser recieves:
 Browser:
 
 1. Uses CA's public key.
-1. Verifies CA;s digital signature.
+1. Verifies CA's digital signature.
 1. Confirms:
 
    - The public key really belongs to example.com
    - No MITM attacker.
 
+**Step 3: Key Exchange (Asymmetric crypto)**
+
+Now both sides agee on shared symmetric session key.
+
+This may use:
+
+- RSA (older)
+- ECDHE (Modern)
+
+Here the symmetric key is never sent directly. Its mathematically derived.
+
+### Phase 2: Secure session established (The real work)
+
+In phase 3 it be like:
+
+- No more digital signatures per request.
+- No more public/private key encryption.
+- Symmetyric encryption + MAC
+
+### Phase 3: User logs in (Username & Password)
+
+**What happens when user clicks "Login"?**
+
+Browser sends:
+```bash
+POST /login
+username=nimaz
+password=******
+```
+
+But actually over the wire:
+```bash
+Encrypt(data, session_key) + MAC
+```
+
+Used:
+
+- AES ➡️ Confidentiality
+- MAC ➡️ Integrity & Authentication
+
+Here no digital signatures and no asymmetric encryption is used because session is already trusted and MAC proves message authenticity.
