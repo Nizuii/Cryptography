@@ -75,5 +75,12 @@ The browser recieves:
 
 **Step 2: Browser verifies the certificate**
 
+Browser:
 
+1. Uses CA's public key.
+1. Verifies CA;s digital signature.
+1. Confirms:
+
+   - The public key really belongs to example.com
+   - No MITM attacker.
 
