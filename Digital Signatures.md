@@ -1,13 +1,13 @@
-# Digital Signatures
+# What is Digital Signature?
 
-## 1️⃣ First Principle: Signing ≠ Encryption
+A digital signature is a cryptographic mechanism that proves three things at once.
 
-- Encryption is about secrecy, Digital signatures are about trust.
-- Encryption answers only one question i.e, "Who is allowed to read the data?"
-- Digital signatures answers 3 questions:
+1. Authenticity - Who sent the data.
+1. Integrity - Whether the data was modified.
+1. Non-repudiation - The sender cannot deny sending it.
 
-  1. Who sent this? (Authentication)
-  2. Was it modified? (Integrity)
-  3. Can the sender deny it later? (Non-Repudiation)
+**The core idea**: A digital signature  is created by hashing the message and encrypting the hash using the sender's private key.
 
-  
+## How a digital algorithm works?
+
+<img width="617" height="380" alt="image" src="https://github.com/user-attachments/assets/fcd652b0-f855-46a7-801a-5e2ed7cad2dc" />
