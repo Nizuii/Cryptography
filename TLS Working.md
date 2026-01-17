@@ -1,4 +1,4 @@
-# What is TLS
+ # What is TLS
 
 TLS or Transport Layer Security is a protocol that ensures secure communication over an insecure network (Internet). TLS provides three guarentees:
 
@@ -99,5 +99,70 @@ This proves:
 
 - No one modified the handshake
 - Keys match on both ends
+
+Handshake complete.
+
+
+### TLS 1.3 Handshake
+
+TLS 1.3 uses Ephemeral Diffie-Hellman to derive shared secrets immediately, encrypts the handshake itself and switches to symmetric crypto almost instantly.
+
+#### 1️⃣ ClientHello
+
+The client sends:
+
+- Suported cipher suites.
+- Supported key shares (ECDHE groups)
+- Client Random
+- Client's ECDHE public key.
+- Extensions (SNI, ALPN, etc...)
+
+#### 2️⃣ ServerHello
+
+Server responds with:
+
+- Selected cipher suite
+- Selected ECDHE group
+- Server's ECDHE public key
+- Server Random
+
+Both sides now compute the shared secret using Elliptic Curve Diffie Hellman.
+
+#### 3️⃣ Encrypted Handshake Begins Immediately
+
+From now on:
+
+- Certificates
+- Certificate Verify
+- Finished messages
+
+All encrypted.
+
+#### 4️⃣ Server Authentication
+
+Server sends:
+
+- X.509 certificate.
+- Signature proving ownership of private key.
+
+Client:
+
+- Verifies CA.
+- Verifies domain
+- Verifies signature.
+
+Authentication is intact but just encrypted now.
+
+#### 5️⃣ Finished Messages
+
+Both sides sends:
+
+- Encrypted transcript hash.
+
+This proves:
+
+- Handshake integrity
+- Shared secret match
+- No MITM
 
 Handshake complete.
