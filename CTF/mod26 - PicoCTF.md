@@ -11,3 +11,12 @@ ROT13 is a simple letter substitution cipher that replaces a letter with the 13t
 
 <img width="250" height="145" alt="image" src="https://github.com/user-attachments/assets/0715ab33-1804-4d50-8d65-367f1bffb753" />
 
+**Example:**
+
+```bash
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+```
+
+```bash
+NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm
+```
