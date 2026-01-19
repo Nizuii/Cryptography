@@ -20,9 +20,15 @@ This report outlines critical vulnerabilities related to the SSL/TLS protocols. 
 
 **Root Cause**: Cryptographic Obsolescence.
 
-### Lack of Forward Secrecy
+### B. Lack of Forward Secrecy
 
 **What it is**: The abscence of forward secrecy makes TLS session vulnerable to decryption later.
 **Without Forward Secerecy (e.g, TLS_RSA)**: If an attacker records traffic and later obtains the private key, all past sessions can be decrypted.
 **With Forward Secrecy (e.g, TLS_ECDHE)**: Each session uses ephemeral keys that are discarded afterward, preventing retrospective decryption.
 **Root Cause**: Static key exchange (RSA).
+
+### C. Weak Signature Algorithms
+
+**What it is**: Certificates signed used obsolete hashes like SHA-1.
+**How it works**: SHA-1 collisions allow attackers to forge certificates that browsers may trust.
+**Root Cause**: Cryptographic Obsolescence.
