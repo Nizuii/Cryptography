@@ -24,3 +24,11 @@ Output:
 ```bash
 NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm
 ```
+
+## About the challenge
+
+So in the CTF challenge we are assigned with a cipher text `cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_45559noq}` and our task is to decrypt it using any ROT-13 online decrypting algorithm or build one using python. Here i've used a python script to decrypt the cipher text.
+
+<img width="1908" height="1011" alt="image" src="https://github.com/user-attachments/assets/445f5a79-9ad7-4622-84e4-80a3bbcd9efb" />
+
+So after decrypting the cipher text i've got the original plain text flag that is `picoCTF{next_time_I'll_try_2_rounds_of_rot13_45559abd}`.
