@@ -94,4 +94,9 @@ This report outlines critical vulnerabilities related to the SSL/TLS protocols. 
   > "Yep here is `ABC` i.e, 3 bytes"
 
 - The prolem was when client sends 2 things **1. Data `ABC`** and **2. Length filed "I have sent 50,000 bytes".
-- 
+- **Root Cause**: Missing bounds check.
+
+### BEAST (Browser Exploit Against SSL/TLS)
+
+BEAST is an attack on TLS 1.0 CBC encryption where the attacker exploits a predictable initialization value (IV) to guess encrypted cookies one byte at a time.
+It works because the attacker can force the browser to send chosen data and compare ciphertexts, and it was fixed by using random IVs (TLS 1.1+) or AEAD ciphers.
