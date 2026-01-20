@@ -32,3 +32,32 @@ This report outlines critical vulnerabilities related to the SSL/TLS protocols. 
 - **What it is**: Certificates signed used obsolete hashes like SHA-1.  
 - **How it works**: SHA-1 collisions allow attackers to forge certificates that browsers may trust.  
 - **Root Cause**: Cryptographic Obsolescence.  
+
+## Additional SSL/TLS Vulnerabilities
+
+### A. Poodle Attack (Padding Oracle On Downgraded Legacy Encryption)
+
+- It is a man-in-the-middle attack that targets SSL 3.0, typically CBC mode and the weakness was no integrity check on padding.
+- **How the attack works:**
+
+  **1. Downgrade Attack**
+
+  - Attacker forces browser +server to fall back from TLS to SSL 3.0.
+  - This happens because browsers used to allow fallback for compatibility.
+ 
+  **2. MITM Position**
+
+  - Attacker sits between victim and server.
+ 
+  **3. Block Manipulation**
+
+  - Attacker modifies ciphertext blocks in HTTPS traffic.
+ 
+  **4. Padding Oracle Leak**
+
+  - Server responds differently depending on padding corectness.
+  - Attacker learns whether a guess was right or wrong.
+ 
+  **5. Byte-by-Byte decryption**
+
+  - Repeated requests slowly reveal session cookies and authentication tokens.
