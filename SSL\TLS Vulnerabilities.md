@@ -61,3 +61,37 @@ This report outlines critical vulnerabilities related to the SSL/TLS protocols. 
   **5. Byte-by-Byte decryption**
 
   - Repeated requests slowly reveal session cookies and authentication tokens.
+
+### B. SWEET32 Attack
+
+- Sweet32 is a cryptographic attack against 64-bit block ciphers used in TLS. It mainly targets 3DES & Blowfish.
+- These ciphers are not broken cryptographically but the problem is their block size.
+
+- **Core idea**
+
+  - Block ciphers work by encrypting fixed size blocks.
+  - With 64-bit blocks there are only
+
+    > 2⁶⁴ possible block values
+
+  - By birthday paradox, collisions become likely after about:
+ 
+    > 2³² blocks (~34 GB of data)
+
+  - When blocks repeat: pattern emerges, information leaks, parts of plaitext like cookies can be recovered.
+
+### Heartbleed (CVE-2014-0160)
+
+- Heartbleed was an implementation bug in OpenSSL's Heartbeat extension.
+- Heartbeak is just a ping.
+
+  > **Client**: "Hey server, are you alive?
+  > Here is 3 bytes `ABC`
+  > Please sent them back."
+
+- Server should reply:
+
+  > "Yep here is `ABC` i.e, 3 bytes"
+
+- The prolem was when client sends 2 things **1. Data `ABC`** and **2. Length filed "I have sent 50,000 bytes".
+- 
