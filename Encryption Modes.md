@@ -33,3 +33,6 @@ C1 | C2 | C3 | C4
 If P1 == P3  →  C1 == C3
 ```
 
+## CBC (Cipher Block Chaining)
+
+ECB failed because same plaintext block generates same ciphertext block and this results in pattern leaks. CBC fixes this by chaining blocks together. Every plain text block depends on the previous ciphertext block. So repetition dies.
